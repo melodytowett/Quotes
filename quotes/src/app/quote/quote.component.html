@@ -1,18 +1,20 @@
 <div class="container">
     <h1>Daily Quotes</h1>
     <hr>
+    <!-- <h3>Quotes</h3>
+    <hr> -->
     <div class="row">
         <div class="col-md-6">
             <ul>
                 <div *ngFor='let quote of quotes;let i=index'> 
                     <li>{{quote.name}} </li>
-                <button (click)='toggleDetails(i)'>toggle Details</button>
+                <button (click)='toggleDetails(i)' class="btn btn-primary">toggle Details</button>
                  <app-quote-detail  *ngIf= 'quote.showDescription'[quote] = 'quote'></app-quote-detail>  
                  </div>               
             </ul>
         </div>
         <div class="col-md-6">
-            <app-quote-form></app-quote-form>
+            <app-quote-form (addQuote) = 'addNewQuote ($event)'></app-quote-form>
         </div>
     </div>
 </div>
