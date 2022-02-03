@@ -2,7 +2,7 @@
     <h1>Daily Quotes</h1>
     <hr>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <ul>
                 <div *ngFor='let quote of quotes;let i=index'> 
                     <li>{{quote.name}} </li>
@@ -10,6 +10,9 @@
                  <app-quote-detail  *ngIf= 'quote.showDescription'[quote] = 'quote'></app-quote-detail>  
                  </div>               
             </ul>
+        </div>
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
         </div>
     </div>
 </div>
