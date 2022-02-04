@@ -22,6 +22,14 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
+  deleteQuote(isComplete,index){
+    if(isComplete){
+      let toDelete = confirm('delete Goal')
+      if(toDelete){
+        this.quotes.splice(index,1);
+      }
+    }
+  }
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription
   }
