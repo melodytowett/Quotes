@@ -3,6 +3,7 @@
         <div class="col-md-6">
         <p> {{quote.description}} </p>
         <p>This goal was published {{quote.completeDate|quoteCount}} </p>
+        <app-vote-quote></app-vote-quote>
         <button (click)='quoteDelete(true)' class="btn btn-danger">Delete quote </button>
     </div>
     </div>
