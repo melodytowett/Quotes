@@ -8,7 +8,8 @@
  ----------------------------------|------------------------
 input Qoute to the form           | dispaly you quote with the day it was published          
  ----------------------------------|-------------------------
-click the toogle button               | show quote details           
+click the toogle button               | show quote details   
+click upvote or downvote   |   Vote the qoute or not        
                       
 ## our program should
 * Calculate Day the quote was published
