@@ -4,7 +4,8 @@
     <!-- <h3>Quotes</h3>
     <hr> -->
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" id="quote">
+            <h2>Display Quotes</h2>
             <ul>
                 <div *ngFor='let quote of quotes;let i=index'> 
                     <li>{{quote.name}} published on {{quote.completeDate|date|uppercase}} by {{quote.author}} </li>

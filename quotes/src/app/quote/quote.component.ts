@@ -7,7 +7,8 @@ import { style } from '@angular/animations';
   selector: 'app-quote',
   templateUrl: './quote.component.html',
   //styleUrls: ['./quote.component.css']
-  styles:['li{color:red}']
+  styles:['li{color:red}','h2{ text-align:center }',
+           '#quote{border:1px solid black; padding-top:20px; border-radius:20px}']
 })
 export class QuoteComponent implements OnInit {
   quotes:Quotes[]=[
@@ -24,7 +25,7 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
-  deleteQuote(isComplete,index){
+  deleteQuote(isComplete,index:any){
     if(isComplete){
       let toDelete = confirm('delete Goal')
       if(toDelete){
