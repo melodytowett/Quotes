@@ -1,11 +1,13 @@
 import { Quotes } from '../quotes';
 import { Component, OnInit } from '@angular/core';
+import { style } from '@angular/animations';
 //import { Quote } from '@angular/compiler';
 
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  //styleUrls: ['./quote.component.css']
+  styles:['li{color:red}']
 })
 export class QuoteComponent implements OnInit {
   quotes:Quotes[]=[
