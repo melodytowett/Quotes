@@ -11,7 +11,7 @@ export class VoteQuoteComponent implements OnInit {
   upvoteButtonClick(){
     this.numberOfVotes ++;
     if(this.numberOfVotes>5){
-      
+     
     }
   }
   downvoteButtonClick(){
