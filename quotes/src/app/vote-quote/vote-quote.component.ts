@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { VoteDirective } from '../vote.directive';
 
 @Component({
   selector: 'app-vote-quote',
@@ -9,6 +10,9 @@ export class VoteQuoteComponent implements OnInit {
   numberOfVotes : number = 0;
   upvoteButtonClick(){
     this.numberOfVotes ++;
+    if(this.numberOfVotes>5){
+      
+    }
   }
   downvoteButtonClick(){
     this.numberOfVotes --;
